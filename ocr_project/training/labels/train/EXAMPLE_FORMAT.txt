@@ -1,0 +1,14 @@
+# YOLO Label Format Example
+# Each line: class_id center_x center_y width height  (all values 0.0–1.0)
+#
+# For an image of size 800x600:
+# A text region at pixel coords (100, 50, 400, 90) would be:
+#   center_x = (100+400)/2 / 800 = 0.3125
+#   center_y = (50+90)/2  / 600 = 0.1167
+#   width    = (400-100)  / 800 = 0.375
+#   height   = (90-50)    / 600 = 0.0667
+#   → label line: 0 0.3125 0.1167 0.375 0.0667
+#
+# This file is just documentation. Delete it and replace with your real labels.
+# Real label files must have the same base name as their image.
+# e.g.  training/images/train/page001.jpg  →  training/labels/train/page001.txt

@@ -1,0 +1,19 @@
+# dataset.yaml — YOLO Training Dataset Config
+# Edit this file to match your classes before training
+
+# Path to training directory (absolute or relative to where you run train_yolo.py)
+path: ./training
+
+# Sub-paths within 'path'
+train: images/train
+val: images/val
+
+# Number of classes
+nc: 1
+
+# Class names — customize these for your use case
+# Examples:
+#   Single class:   names: ['text']
+#   Multi-class:    names: ['printed_text', 'handwritten_text', 'table', 'title']
+names:
+  - text

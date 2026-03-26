@@ -1,0 +1,27 @@
+# OCR Project with YOLOv11n — Python Requirements
+# Install: pip install -r requirements.txt
+
+# ── Web Framework ──────────────────────────────────────────────────────────
+flask>=2.3.0
+flask-cors>=4.0.0
+
+# ── YOLOv11n (Ultralytics) ─────────────────────────────────────────────────
+ultralytics>=8.3.0          # Includes YOLOv11 support
+
+# ── OCR Backends (install at least ONE) ───────────────────────────────────
+easyocr>=1.7.0              # Recommended — works out of the box
+# pytesseract>=0.3.10       # Alternative — requires Tesseract binary installed
+
+# ── Image Processing ───────────────────────────────────────────────────────
+opencv-python>=4.8.0
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# ── Training Utilities ─────────────────────────────────────────────────────
+pyyaml>=6.0.0
+torch>=2.0.0                # PyTorch (auto-installed with ultralytics)
+torchvision>=0.15.0
+
+# ── Optional: GPU support ──────────────────────────────────────────────────
+# If you have NVIDIA GPU, replace torch with:
+# torch==2.3.0+cu118 --index-url https://download.pytorch.org/whl/cu118
